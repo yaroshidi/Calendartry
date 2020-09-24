@@ -17,8 +17,14 @@ app.get('/calendar', function(request, response) {
   response.render('pages/calendar');
 });
 
-app.get('/project', function(request, response) {
-  response.render('pages/project');
+app.get('/planning', function(request, response) {
+  response.render('pages/planning');
+});
+app.get('/analysis', function(request, response) {
+  response.render('pages/analysis');
+});
+app.get('/notes', function(request, response) {
+  response.render('pages/notes');
 });
 
 app.listen(app.get('port'), function() {
